@@ -2,14 +2,19 @@
 asp.net core를 기반으로한 기반 솔루션
 
 
+
+
+# Entity Framewwork core 사용방법
+
+
+
+
 ## PocketBook API
 
 UoW 패턴을 사용하여 구현된 Sample
 
-- [단계별 - Asp.Net Core 5의 리포지토리 패턴 및 작업 단위](https://dev.to/moe23/step-by-step-repository-pattern-and-unit-of-work-with-asp-net-core-5-3l92)
-
-- [GitHub 소스](https://github.com/mohamadlawand087/v33-repo-uow)
-
+- [단계별 - Asp.Net Core 5의 리포지토리 패턴 및 작업 단위](https://dev.to/moe23/step-by-step-repository-pattern-and-unit-of-work-with-asp-net-core-5-3l92) [GitHub 소스](https://github.com/mohamadlawand087/v33-repo-uow)
+- [Repository Pattern and Unit of Work with ASP.NET Core Web API](https://enlear.academy/repository-pattern-and-unit-of-work-with-asp-net-core-web-api-6802e1aa4f78)
 
 ### 리포지토리 패턴이란
 리포지토리 패턴은 특히 .net 코어가 빛을 발하는 API 및 마이크로서비스가 많은 세상에서 많이 언급됩니다.
@@ -38,3 +43,12 @@ UoW 패턴을 사용하여 구현된 Sample
 2. 메모리 내 데이터베이스 작업을 관리하고 나중에 메모리 내 업데이트를 하나의 트랜잭션으로 데이터베이스에 저장합니다.
 3. 종속성 주입을 사용하여 레이어를 느슨하게 결합하도록 합니다.
 4. 단위 테스트 또는 테스트 주도 개발(TDD)을 따르도록 촉진합니다.
+
+
+
+
+# 단위 테스트(TDD)
+
+./src/Tests/Bank 
+./tests/BankTests 
+[연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](https://docs.microsoft.com/ko-kr/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022)
