@@ -3,18 +3,23 @@ Console.WriteLine("Hello, World!");
 
 namespace 단위테스트용프로젝트
 {
-    public class Account
+    /// <summary>
+    /// Account
+    /// </summary>
+    public class 계좌
     {
-        public Account()
+        public 계좌()
         {
             
         }
 
-        public decimal Balance { get; private set; }
+        // Balance
+        public decimal 잔고 { get; private set; }
 
-        public void AddTransaction(decimal @decimal)
+        // Transaction
+        public void 거래추가(decimal amount)
         {
-            Balance = 200m;
+            잔고 = 200m;
         }
     }
 }
