@@ -7,7 +7,7 @@ namespace 단위테스트
     public class 계좌Test
     {
         [TestMethod]
-        public void 계좌개시_잔고0()
+        public void 계좌개시_초기잔액0()
         {
             // 준비
 
@@ -15,7 +15,7 @@ namespace 단위테스트
             var account = new 계좌();
 
             // 검증
-            Assert.AreEqual(0m, account.잔고);
+            Assert.AreEqual(0m, account.잔액);
         }
 
         /// <summary>
@@ -31,18 +31,20 @@ namespace 단위테스트
             account.거래추가(200m);
 
             // 검증(Assertion)
-            Assert.AreEqual(200m, account.잔고);
+            Assert.AreEqual(200m, account.잔액);
         }
 
         [TestMethod]
-        public void Adding100TransactionBalance()
+        public void 거래100추가_잔액()
         {
             // 준비
             var account = new 계좌();
 
             // 동작
+            account.거래추가(100m);
 
             // 검증
+            Assert.AreEqual(100m, account.잔액);
 
         }
     }
