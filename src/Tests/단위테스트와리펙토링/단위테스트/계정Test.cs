@@ -45,6 +45,25 @@ namespace 단위테스트
 
             // 검증
             Assert.AreEqual(100m, account.잔액);
+        }
+
+        [TestMethod]
+        public void 거래추가_합계잔액생성()
+        {
+            // 준비
+            var account = new 계좌();
+            account.거래추가(50m);
+
+            // 동작
+            account.거래추가(75m);
+            
+            // 검증
+            Assert.AreEqual(125m, account.잔액);
+
+
+
+
+
 
         }
     }

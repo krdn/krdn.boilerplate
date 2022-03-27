@@ -14,7 +14,7 @@ namespace 단위테스트용프로젝트
         // Transaction
         public void 거래추가(decimal amount)
         {
-            잔액 = amount;
+            잔액 += amount;
         }
     }
 }
