@@ -59,12 +59,6 @@ namespace 단위테스트
             
             // 검증
             Assert.AreEqual(125m, account.잔액);
-
-
-
-
-
-
         }
     }
 }
