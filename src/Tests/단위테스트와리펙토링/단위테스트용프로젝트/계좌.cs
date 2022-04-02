@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 단위테스트
+namespace 단위테스트용프로젝트
 {
     public class 계좌
     {
